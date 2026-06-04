@@ -1,6 +1,6 @@
 cask "mlxcontrol" do
-  version "0.1.1"
-  sha256 "95f2c19f9cb15bd4bef705c5e978684aadc477628cd65bfac967205521142023"
+  version "0.1.2"
+  sha256 "5c3c5613d5729b49efb66ca341b7094dc1da6fb2443dc96ab57c788ded975b4e"
 
   url "https://github.com/wonsss/MLXControl/releases/download/v#{version}/MLXControl-#{version}.dmg"
   name "MLX Control"
