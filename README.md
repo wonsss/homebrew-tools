@@ -15,10 +15,22 @@ Command:
 cc-auto --help
 ```
 
+Runtime requirement:
+
+```sh
+brew install tmux
+```
+
 If Homebrew tap trust checks are enabled:
 
 ```sh
 brew trust --formula wonsss/tools/claude-code-auto-resume
+```
+
+Uninstall:
+
+```sh
+brew uninstall claude-code-auto-resume
 ```
 
 ## Install MLX Control
