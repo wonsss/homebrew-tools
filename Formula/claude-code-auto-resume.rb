@@ -7,7 +7,6 @@ class ClaudeCodeAutoResume < Formula
 
   depends_on :macos
   depends_on "tmux"
-  depends_on xcode: ["15.0", :build]
 
   def install
     system "swift", "build", "-c", "release", "--disable-sandbox", "--product", "cc-auto"
