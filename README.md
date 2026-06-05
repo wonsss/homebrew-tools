@@ -6,7 +6,7 @@ Homebrew tap for tools published by `wonsss`.
 
 ```sh
 brew tap wonsss/tools
-brew install claude-code-auto-resume
+brew install --cask claude-code-auto-resume
 ```
 
 Command:
@@ -24,13 +24,13 @@ brew install tmux
 If Homebrew tap trust checks are enabled:
 
 ```sh
-brew trust --formula wonsss/tools/claude-code-auto-resume
+brew trust --cask wonsss/tools/claude-code-auto-resume
 ```
 
 Uninstall:
 
 ```sh
-brew uninstall claude-code-auto-resume
+brew uninstall --cask claude-code-auto-resume
 ```
 
 ## Install MLX Control
