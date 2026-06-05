@@ -1,16 +1,15 @@
 class ClaudeCodeAutoResume < Formula
   desc "Safely auto-resume Claude Code after session limits using tmux"
   homepage "https://github.com/wonsss/claude-code-auto-resume"
-  url "https://github.com/wonsss/claude-code-auto-resume/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "9d275e6e052104e5deed64b9c018f139b19ac37158e853d5fb494cd0bc96633e"
+  url "https://github.com/wonsss/claude-code-auto-resume/releases/download/v0.1.0/claude-code-auto-resume-v0.1.0-macos-universal.tar.gz"
+  sha256 "8eeb44f41e10a4e764a69518a6cb073c45679994a9860ed5f450da072419574d"
   license "MIT"
 
   depends_on :macos
   depends_on "tmux"
 
   def install
-    system "swift", "build", "-c", "release", "--disable-sandbox", "--product", "cc-auto"
-    bin.install ".build/release/cc-auto"
+    bin.install "cc-auto"
   end
 
   test do
