@@ -1,6 +1,6 @@
 cask "claude-code-auto-resume" do
-  version "0.1.0"
-  sha256 "8eeb44f41e10a4e764a69518a6cb073c45679994a9860ed5f450da072419574d"
+  version "0.1.1"
+  sha256 "a836a012d6d042eec0edbdaba040fde68b9148ef28b4e8722b1c8f1192743740"
 
   url "https://github.com/wonsss/claude-code-auto-resume/releases/download/v#{version}/claude-code-auto-resume-v#{version}-macos-universal.tar.gz"
   name "claude-code-auto-resume"
@@ -13,6 +13,12 @@ cask "claude-code-auto-resume" do
   end
 
   binary "claude-code-auto-resume-v#{version}-macos-universal/cc-auto", target: "cc-auto"
+
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{staged_path}/claude-code-auto-resume-v#{version}-macos-universal/cc-auto"],
+                   sudo: false
+  end
 
   caveats <<~EOS
     cc-auto controls Claude Code through tmux.
