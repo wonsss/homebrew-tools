@@ -1,6 +1,6 @@
 cask "claude-code-auto-resume" do
-  version "0.1.1"
-  sha256 "a836a012d6d042eec0edbdaba040fde68b9148ef28b4e8722b1c8f1192743740"
+  version "0.1.2"
+  sha256 "57bbe00b7b89512e4155bd8f3e2fa61f093505bfbf6e5ed7404751f56b8bd6c5"
 
   url "https://github.com/wonsss/claude-code-auto-resume/releases/download/v#{version}/claude-code-auto-resume-v#{version}-macos-universal.tar.gz"
   name "claude-code-auto-resume"
